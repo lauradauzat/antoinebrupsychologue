@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
 }
 
 .bigass {
@@ -74,14 +74,71 @@ main, header {
 
 #Accueil .accueil-text-content {
   background-color: white;
-  position: absolute;
-  width: 408px;
-  right: 101px;
-  bottom: -15px;
-  padding: 20px;
+  width: 429px;
+  padding: 42px;
+  float: right;
+  bottom: -80px;
+  right: 40px;
+  position: relative;
 }
 
 #Présentation {
-  margin-top: 152px;
+  margin-top: 210px;
+}
+
+#Présentation .trombi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Présentation .trombi .trombi-left .img-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("/style/img/trombi.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 2em;
+}
+
+#Présentation .problematiques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+#Présentation .problematiques span {
+  width: 66%;
+  text-align: end;
+  padding-right: 2em;
+}
+
+#Présentation .problematiques ul {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+#Présentation .problematiques ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #653E8C;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
 /*# sourceMappingURL=main.css.map */
