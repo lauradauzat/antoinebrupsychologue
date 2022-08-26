@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body {
+  background-color: #f8f8f8;
+}
+
+.bigass {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #653E8C;
+}
+
+a:hover {
+  color: #b294cf;
+}
+
+main, header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.header {
+  border-bottom: 1px grey solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header .logo-left img {
+  height: 30px;
+}
+
+#Accueil {
+  background-image: url(/style/img/appointment-at-psychologist.jpeg);
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 400px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  margin-top: 40px;
+}
+
+#Accueil .accueil-text-content {
+  background-color: white;
+  position: absolute;
+  width: 408px;
+  right: 101px;
+  bottom: -15px;
+  padding: 20px;
+}
+
+#Présentation {
+  margin-top: 152px;
+}
+/*# sourceMappingURL=main.css.map */
