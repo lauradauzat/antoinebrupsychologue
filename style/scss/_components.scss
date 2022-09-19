@@ -1,14 +1,21 @@
+header {
+    position: sticky; 
+    top: 0; 
+    background-color: white;
+    ;
+}
 .header {
-     
     border-bottom: 1px grey solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding : 30px 10px;
 
+
     ul {
         list-style-type: none;
         display: flex;
+        align-items: center;
         li {
             margin-left: 10px; 
             margin-right: 10px;
@@ -16,12 +23,23 @@
     }
 
     .logo-left img {
-        height: 30px;
+        height: 60px;
+    }
+
+    #cta {
+        border: solid $secondary 3px; 
+        padding: 20px; 
+        border-radius: 3px;
+    }
+
+    #cta:hover {
+       background-color: $secondary;
+       color: white; 
     }
 }
 
 #Accueil{
-    background-image: url(style/img/appointment-at-psychologist.jpeg);
+    background-image: url(../img/appointment-at-psychologist.jpeg);
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 400px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -38,11 +56,12 @@
         bottom: -80px;
         right: 40px;
         position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 
 #Présentation {
-    margin-top: 210px;
+    margin-top: 65px;
 
     .trombi {
         display: flex;
@@ -54,7 +73,7 @@
                 width: 150px ;
                 height: 150px;
                 border-radius: 50%;
-                background-image: url('style/img/trombi.jpeg');
+                background-image: url('../img/trombi.jpeg');
                 background-position: center; 
                 background-repeat: no-repeat; 
                 background-size: cover; 
@@ -91,4 +110,18 @@
         
 
     }
+}
+
+
+footer {
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+
+    .footer-content {
+        max-width: 1000px;
+        width: 100%; 
+        margin: 40px; 
+    }
+ 
 }
