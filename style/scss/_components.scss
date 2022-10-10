@@ -91,6 +91,12 @@ header {
         display: flex;
         align-items: center;
         margin-top: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: $secondary-hover;
+        box-shadow: 0 0 0 100vmax $secondary-hover;
+        clip-path: inset(0 -100vmax);
+        
 
         span {
             width: 66%;
@@ -114,7 +120,28 @@ header {
         
 
     }
+
+  
 }
+
+.intervention-text-content, .bleed {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $secondary-hover;
+    box-shadow: 0 0 0 100vmax $secondary-hover;
+    clip-path: inset(0 -100vmax);
+    
+}
+
+.bleed {
+    margin-bottom: 40px;
+}
+
+
+.code {
+    margin-top: 40px;
+}
+
 
 
 footer {

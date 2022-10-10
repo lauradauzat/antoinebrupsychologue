@@ -23,6 +23,7 @@ footer {
   height: 3px;
   background: #653E8C;
   border: none;
+  display: none;
 }
 
 h2 {
@@ -39,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #b294cf;
+  color: #e5daef;
 }
 
 main, header {
@@ -178,6 +179,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e5daef;
+  -webkit-box-shadow: 0 0 0 100vmax #e5daef;
+          box-shadow: 0 0 0 100vmax #e5daef;
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
 }
 
 #Présentation .problematiques span {
@@ -204,6 +212,24 @@ header {
   /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
+}
+
+.intervention-text-content, .bleed {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e5daef;
+  -webkit-box-shadow: 0 0 0 100vmax #e5daef;
+          box-shadow: 0 0 0 100vmax #e5daef;
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
+}
+
+.bleed {
+  margin-bottom: 40px;
+}
+
+.code {
+  margin-top: 40px;
 }
 
 footer {
@@ -236,6 +262,7 @@ footer .footer-content {
   padding: 20px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: white;
 }
 
 .card-container .img-container {
