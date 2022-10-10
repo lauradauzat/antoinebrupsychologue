@@ -16,7 +16,16 @@ footer {
     font-weight: 400;
     font-size: 30px;
     margin: 0;
+
     //color: $secondary;
+}
+
+.bigasshr {
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    height: 3px;
+    background: $secondary;
+    border: none;
 }
 
 h2 {

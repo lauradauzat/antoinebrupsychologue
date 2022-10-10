@@ -1,0 +1,64 @@
+@media screen and (max-width: 915px)  {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card .img-container img {
+        height:100%;
+    }
+
+    .span-box .left-span img {
+        width: 44px;
+    }
+
+    #Présentation .trombi {
+        flex-direction: column;
+    }
+
+    #Accueil {
+        background-image: none;
+        background-color: unset;
+
+
+    }
+    
+    #Accueil .accueil-text-content {
+        background-color: white;
+        width: unset;
+        float: unset;
+        bottom: unset;
+        right: unset;
+        position: unset;
+    }
+
+    .header li:not(:last-child) {
+        display: none;
+    }
+
+    .header .logo-left img {
+        height: 55px;
+    }
+
+    .header #cta {
+        padding: 10px;
+    }
+
+
+
+    .header {
+
+        padding: 15px 10px;
+    }
+    #Présentation .trombi .trombi-left .img-container {
+        width: 200px;
+        height: 200px;
+ 
+    }
+}
+
+@media screen and (max-width: 650px)  {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+}

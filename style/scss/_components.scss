@@ -2,14 +2,18 @@ header {
     position: sticky; 
     top: 0; 
     background-color: white;
-    ;
+    z-index: 1;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
 }
 .header {
-    border-bottom: 1px grey solid;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding : 30px 10px;
+
+ 
 
 
     ul {
@@ -23,7 +27,7 @@ header {
     }
 
     .logo-left img {
-        height: 60px;
+        height: 85px;
     }
 
     #cta {

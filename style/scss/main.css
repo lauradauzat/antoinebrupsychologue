@@ -17,6 +17,14 @@ footer {
   margin: 0;
 }
 
+.bigasshr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 3px;
+  background: #653E8C;
+  border: none;
+}
+
 h2 {
   text-transform: uppercase;
 }
@@ -64,10 +72,12 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 1;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .header {
-  border-bottom: 1px grey solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +106,7 @@ header {
 }
 
 .header .logo-left img {
-  height: 60px;
+  height: 85px;
 }
 
 .header #cta {
@@ -262,5 +272,59 @@ footer .footer-content {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 915px) {
+  .card-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .card .img-container img {
+    height: 100%;
+  }
+  .span-box .left-span img {
+    width: 44px;
+  }
+  #Présentation .trombi {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Accueil {
+    background-image: none;
+    background-color: unset;
+  }
+  #Accueil .accueil-text-content {
+    background-color: white;
+    width: unset;
+    float: unset;
+    bottom: unset;
+    right: unset;
+    position: unset;
+  }
+  .header li:not(:last-child) {
+    display: none;
+  }
+  .header .logo-left img {
+    height: 55px;
+  }
+  .header #cta {
+    padding: 10px;
+  }
+  .header {
+    padding: 15px 10px;
+  }
+  #Présentation .trombi .trombi-left .img-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
