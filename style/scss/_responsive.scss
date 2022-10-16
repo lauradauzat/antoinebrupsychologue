@@ -1,4 +1,4 @@
-@media screen and (max-width: 915px)  {
+@media screen and (max-width: 1000px)  {
     .card-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -15,21 +15,25 @@
         flex-direction: column;
     }
 
+
     #Accueil {
         background-image: none;
-        background-color: unset;
-
-
+    background-color: unset;
+    height: unset;
     }
     
     #Accueil .accueil-text-content {
+        background-image: none;
         background-color: white;
         width: unset;
         float: unset;
         bottom: unset;
         right: unset;
         position: unset;
+
     }
+
+    
 
     .header li:not(:last-child) {
         display: none;
@@ -57,8 +61,51 @@
 }
 
 @media screen and (max-width: 650px)  {
+
+    #Accueil {
+        background-image: none;
+        background-color: unset;
+
+
+    }
     .card-container {
         grid-template-columns: 1fr;
     }
+
+    .header ul li {
+       margin: 0;
+    }
+
+    #Présentation {
+        margin-top: 31px;
+
+        h2 {
+            text-align: center;
+        }
+
+        
+    }
+
+    #Présentation .trombi .trombi-left .img-container {
+        margin-right: unset;
+    }
+    #Présentation .problematiques {
+        flex-direction: column;
+    }
+
+    #Présentation .problematiques span {
+        width: 90%;
+        text-align: start;
+    }
+
+    #Présentation .problematiques {
+        align-items: initial;
+        padding-bottom: 0px
+    }
+
+    .span-box .left-span {
+        display: none;
+    }
+
     
 }

@@ -20,11 +20,17 @@ footer {
     //color: $secondary;
 }
 
+.purplebg {
+    background-color: $purple2;
+    box-shadow: 0 0 0 100vmax $purple2;
+    clip-path: inset(0 -100vmax);
+}
+
 .bigasshr {
     margin-top: 40px;
     margin-bottom: 40px; 
     height: 3px;
-    background: $secondary;
+    background: $purple2;
     border: none;
     display: none;
 }
@@ -47,8 +53,8 @@ a {
 }
 
 main , header {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .article-content {

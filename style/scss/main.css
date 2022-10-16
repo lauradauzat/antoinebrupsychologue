@@ -17,11 +17,18 @@ footer {
   margin: 0;
 }
 
+.purplebg {
+  background-color: #914ad9;
+  box-shadow: 0 0 0 100vmax #914ad9;
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
+}
+
 .bigasshr {
   margin-top: 40px;
   margin-bottom: 40px;
   height: 3px;
-  background: #653E8C;
+  background: #914ad9;
   border: none;
   display: none;
 }
@@ -31,41 +38,31 @@ h2 {
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #653E8C;
 }
-
 a:hover {
   color: #e5daef;
 }
 
 main, header {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .article-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 1000px;
 }
 
 .article-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 header {
@@ -74,92 +71,66 @@ header {
   top: 0;
   background-color: white;
   z-index: 1;
-  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px 10px;
 }
-
 .header ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .header ul li {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  padding: 20px 0;
 }
-
 .header .logo-left img {
   height: 85px;
 }
-
 .header #cta {
   border: solid #653E8C 3px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 3px;
 }
-
 .header #cta:hover {
   background-color: #653E8C;
   color: white;
 }
 
 #Accueil {
-  background-image: url(../img/appointment-at-psychologist.jpeg);
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  height: 400px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+  background-image: url(../img/Psychologist-bro.svg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 400px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   margin-top: 40px;
 }
-
 #Accueil .accueil-text-content {
   background-color: white;
-  width: 429px;
+  width: 732px;
   padding: 42px;
   float: right;
   bottom: -80px;
   right: 40px;
   position: relative;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 90%;
 }
 
 #Présentation {
   margin-top: 65px;
 }
-
 #Présentation .trombi {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #Présentation .trombi .trombi-left .img-container {
   width: 150px;
   height: 150px;
@@ -170,58 +141,52 @@ header {
   background-size: cover;
   margin-right: 2em;
 }
-
+#Présentation .img-cont {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+#Présentation .img-cont img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
 #Présentation .problematiques {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 40px;
   padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #e5daef;
-  -webkit-box-shadow: 0 0 0 100vmax #e5daef;
-          box-shadow: 0 0 0 100vmax #e5daef;
   -webkit-clip-path: inset(0 -100vmax);
           clip-path: inset(0 -100vmax);
+  color: white;
 }
-
 #Présentation .problematiques span {
   width: 66%;
   text-align: end;
   padding-right: 2em;
 }
-
 #Présentation .problematiques ul {
-  list-style: none;
-  /* Remove default bullets */
+  list-style: none; /* Remove default bullets */
 }
-
 #Présentation .problematiques ul li::before {
-  content: "\2022";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #653E8C;
-  /* Change the color */
-  font-weight: bold;
-  /* If you want it to be bold */
-  display: inline-block;
-  /* Needed to add space between the bullet and the text */
-  width: 1em;
-  /* Also needed for space (tweak if needed) */
-  margin-left: -1em;
-  /* Also needed for space (tweak if needed) */
+  content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #653E8C; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .intervention-text-content, .bleed {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #e5daef;
-  -webkit-box-shadow: 0 0 0 100vmax #e5daef;
-          box-shadow: 0 0 0 100vmax #e5daef;
-  -webkit-clip-path: inset(0 -100vmax);
-          clip-path: inset(0 -100vmax);
+  color: white;
+}
+.intervention-text-content .card, .bleed .card {
+  color: rgb(11, 11, 11);
 }
 
 .bleed {
@@ -234,14 +199,9 @@ header {
 
 footer {
   background-color: #653E8C;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 footer .footer-content {
   max-width: 1000px;
   width: 100%;
@@ -249,27 +209,21 @@ footer .footer-content {
 }
 
 .card-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin: 40px 0;
 }
-
 .card-container .card {
   border-radius: 10px;
   padding: 20px;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-color: white;
 }
-
 .card-container .img-container {
   width: inherit;
   height: 227px;
 }
-
 .card-container .img-container img {
   width: 100%;
   -o-object-fit: cover;
@@ -279,32 +233,24 @@ footer .footer-content {
 .span-box {
   margin-top: 40px;
   margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .span-box .left-span {
   margin-right: 40px;
 }
-
 .span-box .left-span img {
   width: 80px;
 }
-
 .span-box .span-title {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1000px) {
   .card-container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .card .img-container img {
     height: 100%;
@@ -313,16 +259,15 @@ footer .footer-content {
     width: 44px;
   }
   #Présentation .trombi {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #Accueil {
     background-image: none;
     background-color: unset;
+    height: unset;
   }
   #Accueil .accueil-text-content {
+    background-image: none;
     background-color: white;
     width: unset;
     float: unset;
@@ -347,11 +292,38 @@ footer .footer-content {
     height: 200px;
   }
 }
-
 @media screen and (max-width: 650px) {
-  .card-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  #Accueil {
+    background-image: none;
+    background-color: unset;
   }
-}
-/*# sourceMappingURL=main.css.map */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .header ul li {
+    margin: 0;
+  }
+  #Présentation {
+    margin-top: 31px;
+  }
+  #Présentation h2 {
+    text-align: center;
+  }
+  #Présentation .trombi .trombi-left .img-container {
+    margin-right: unset;
+  }
+  #Présentation .problematiques {
+    flex-direction: column;
+  }
+  #Présentation .problematiques span {
+    width: 90%;
+    text-align: start;
+  }
+  #Présentation .problematiques {
+    align-items: initial;
+    padding-bottom: 0px;
+  }
+  .span-box .left-span {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
